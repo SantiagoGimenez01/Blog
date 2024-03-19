@@ -1,0 +1,254 @@
+
+/* FUENTES */
+@font-face{
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "roboto";
+    src: url(../fonts/fuente_2.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background: url(../img/fondo.png) #b5bac9;
+    font-family: sans-serif, helevetica, arial;
+}
+
+.alert{
+    padding: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.alert-error{
+    background: red;
+}
+
+.alert-exito{
+    background: green;
+}
+
+
+/* CABECERA */
+#header{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    margin: 10px 10px;
+}
+ /* LOGO */
+#logo{  
+    float: left;
+    width: 350px;
+    height: 80px;
+    margin-left: 20px;
+}
+#logo a{
+    font-family: "fajala", Helvetica;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #666f88;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0pc black;
+    transition: all 500ms;
+    line-height: 70px;
+}
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0pc black;
+}
+
+/* MENU */
+#nav{
+    clear: both;
+    width: 70%;
+    height: 45px;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    margin: 30px auto;
+    overflow: hidden;
+}
+#nav ul{
+    list-style:none;
+}
+#nav ul li{
+    float: left;
+    line-height: 45px;
+    border-right: 1px solid #d6d6d6;
+}
+#nav ul li:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%); 
+}
+#nav ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #788199;
+}
+/* CONTENIDO */
+#container{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* BARRA LATERAL */
+#sidebar{
+    float: right;
+    width: 26%;
+    height: auto;
+    margin: 5px;
+}
+
+.block-aside{
+    display:block;
+    width: 90%;
+    margin: 8px auto;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3), 0px 3px 15px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 15px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 70%;
+    margin: 10px 0px;
+    padding: 2px;
+    font-family: "roboto";
+}
+
+.block-aside h3{
+    margin-bottom: 15px;
+    font-family: "fajala";
+}
+
+input[type="submit"],
+input[type="button"],
+.button{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 2px;
+    display: block;
+    border-radius: 2px;
+    color:#FEFEFE;
+    background:#a3a8b7;
+    border: 1px solid #444;
+    text-align: center;
+    cursor:pointer;
+    width: 150px;
+    font-family: "roboto";
+    font-weight: bold;    
+}
+
+/* PRINCIPAL */
+#main-box{
+    float: left;
+    width: 65%;
+    min-height: 400px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3), 0px 3px 15px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
+
+}
+
+/* ENTRADAS */
+#main-box .inputs{
+    margin: 10px 0 0 50px;
+}
+
+#main-box h1{
+    font-size: 26px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow:1px 1px 2px #ccc;
+    font-family: "fajala";
+    margin-bottom: 10px;
+}
+
+#main-box h2{
+    font-size: 20px;
+    color: #a3a8b7;
+    letter-spacing: .5px;
+    font-family: "fajala";
+    margin-top: 20px;
+}
+
+#main-box a{
+    color: #333;
+    font-family: "roboto";
+}
+
+#all-inputs a{
+    display: block;
+    border-radius: 2px;
+    padding: 8px;
+    color:black;
+    background:#a3a8b7;
+    border: 1px solid #444;
+    margin: 20px auto;
+    margin-top: 50px;
+    text-align: center;
+    cursor:pointer;
+    width: 150px;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.titulo-busqueda{
+    width: 72%;
+    color: black;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border: solid black 3px;
+    font-family: 'Roboto';
+}
+
+/* PIE DE PAGINA */
+#footer{
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    background:linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    padding: 10px;
+    text-align: center;
+    font-family: "roboto";
+    font-style: italic;
+}
+
+
+
+
